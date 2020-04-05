@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Source File: COMP397 Assignment 2-->
+<!-- Author: Dilip kumar-->
+<!-- ID: 301101238 -->
+<!-- Last Modified By: Dilip kumar -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Swift Fish </title>
+    <!-- CSS SECTION -->
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body onload="preload();">
+    <div id="header">
+        <h1>
+            <img src="assets/images/logo.png" /> <br />
+            <b>Swift Fish!</b>
+        </h1>
+    </div>
+
+    <div id="wrapper">
+        <!-- GAME CONTAINER -->
+        <canvas id="canvas" width="640" height="480"></canvas>
+
+        <!-- JAVASCRIPT SECTION -->
+        <script src="Scripts/lib/Stats.js"></script>
+        <script src="Scripts/lib/easeljs-0.8.0.min.js"></script>
+        <script src="Scripts/lib/tweenjs-0.6.0.min.js"></script>
+        <script src="Scripts/lib/soundjs-0.6.0.min.js"></script>
+        <script src="Scripts/lib/preloadjs-0.6.0.min.js"></script>
+
+        <!-- GAME OBJECTS -->
+        <script src="Scripts/utility/utility.js"></script>
+        <script src="Scripts/utility/state_constants.js"></script>
+
+        <script src="Scripts/objects/button.js"></script>
+        <script src="Scripts/objects/gameobject.js"></script>
+        <script src="Scripts/objects/water.js"></script>
+        <script src="Scripts/objects/fish.js"></script>
+        <script src="Scripts/objects/food.js"></script>
+        <script src="Scripts/objects/monster.js"></script>
+        <script src="Scripts/objects/scoreboard.js"></script>
+
+        <script src="Scripts/managers/collision.js"></script>
+
+        <script src="Scripts/states/start.js"></script>
+        <script src="Scripts/states/game_play.js"></script>
+        <script src="Scripts/states/gameover.js"></script>
+
+        <!-- GAME SCRIPTS -->
+        <script src="Scripts/game.js"></script>
+    </div>
+
+    <div id="footer">
+        <b>Copyright &copy; TNH Web Solutions</b>
+    </div>
+</body>
+</html>
